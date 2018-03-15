@@ -1,0 +1,8 @@
+E:\C#_project\WPF_Project\baidumap\BMapWeb\obj\Release\BMapWeb.csprojResolveAssemblyReference.cache
+E:\C#_project\WPF_Project\baidumap\BMapWeb\bin\BMapWeb.dll.config
+E:\C#_project\WPF_Project\baidumap\BMapWeb\bin\BMapWeb.dll
+E:\C#_project\WPF_Project\baidumap\BMapWeb\bin\BMapWeb.pdb
+E:\C#_project\WPF_Project\baidumap\BMapWeb\bin\ZhengBangOcean.exe
+E:\C#_project\WPF_Project\baidumap\BMapWeb\bin\ZhengBangOcean.pdb
+E:\C#_project\WPF_Project\baidumap\BMapWeb\obj\Release\BMapWeb.dll
+E:\C#_project\WPF_Project\baidumap\BMapWeb\obj\Release\BMapWeb.pdb
