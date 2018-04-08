@@ -1,0 +1,27 @@
+﻿<Window x:Class="Server_IOCP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Server_IOCP" Height="600" Width="600" Loaded="Window_Loaded">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label VerticalContentAlignment="Center">Server IP:</Label>
+            <TextBox Name="txtServerAddress" Width="150" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                127.0.0.1</TextBox>
+            <Label VerticalContentAlignment="Center">Port:</Label>
+            <TextBox Name="txtServerPort" Width="50" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                50000</TextBox>
+            <Button Name="btnListen" Margin="15 2 2 2" Width="90" Height="25" Click="btnListen_Click">start listen</Button>
+            <!--<Label VerticalContentAlignment="Center" Margin="15 0 0 0">当前Client：</Label>
+            <TextBlock Name="txtbClientQuantity" VerticalAlignment="Center">0 个</TextBlock>-->
+        </StackPanel>
+        <ListBox Grid.Row="1" Name="lsb"></ListBox>
+        <!--<TextBox Grid.Row="1" Name="txtMsg" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True"></TextBox>-->
+        <Button Grid.Row="2" Name="btnClear" Width="70" Height="25" HorizontalAlignment="Right" Margin="5 0" Click="btnClear_Click">
+            Clear list</Button>
+    </Grid>
+</Window>

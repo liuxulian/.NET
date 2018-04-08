@@ -1,0 +1,30 @@
+﻿<Window x:Class="MultiClients.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CreateMultiClients" Height="500" Width="600">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label VerticalContentAlignment="Center">Server IP:</Label>
+            <TextBox Name="txtServerAddress" Width="150" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                127.0.0.1</TextBox>
+            <Label VerticalContentAlignment="Center">Port:</Label>
+            <TextBox Name="txtServerPort" Width="50" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                50000</TextBox>
+            <Button Name="btnConnect" Margin="15 2 2 2" Width="90" Height="25" Click="btnConnect_Click">Connect</Button>          
+            <TextBlock Name="txtbCount" Margin="10 0" VerticalAlignment="Center">0</TextBlock>
+        </StackPanel>        
+        <TextBox Grid.Row="1" Name="txtRx" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True"></TextBox>        
+        <Button Grid.Row="2" Name="btnClear" Width="70" Height="25" HorizontalAlignment="Right" Margin="5 0" Click="btnClear_Click">
+            ClearText</Button>
+        <TextBox Grid.Row="3" Name="txtTx" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"></TextBox>
+        <Button Grid.Row="4" Name="btnSend" Width="70" Height="25" HorizontalAlignment="Right" Margin="5 0" Click="btnSend_Click">
+            SendData</Button>
+    </Grid>
+</Window>
